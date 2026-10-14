@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this research-engineering artifact, please cite it."
+authors:
+  - family-names: Labzina
+    given-names: Elena
+title: "Controllable Sycophancy Evals"
+version: 0.1.0
+date-released: 2026-10-14
+license: Apache-2.0
+repository-code: "https://github.com/elenalabzina/controllable-sycophancy-evals"

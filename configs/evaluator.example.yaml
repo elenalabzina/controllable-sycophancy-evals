@@ -1,0 +1,11 @@
+# Example evaluator backend.
+# Replace the model name with a judge available in your environment.
+backend: openai
+base_model: gpt-5.6-sol
+api_key_env: OPENAI_API_KEY
+
+generation:
+  max_new_tokens: 700
+  temperature: 0.0
+  top_p: 1.0
+  do_sample: false

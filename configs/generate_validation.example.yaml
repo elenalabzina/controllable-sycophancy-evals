@@ -1,0 +1,27 @@
+model_config: configs/model.example.yaml
+evaluation_model_config: configs/evaluator.example.yaml
+
+stages_path: synthetic/stages.yaml
+topics_path: synthetic/topics_example.yaml
+output_path: data/synthetic/raw/public_demo_validation.jsonl
+
+calibration:
+  enabled: true
+  definitions_path: synthetic/calibration/stage_definitions.yaml
+  anchors_path: synthetic/calibration/example_anchors.csv
+  examples_per_stage: 1
+  contrast_examples_per_adjacent_stage: 1
+  min_confidence: medium
+
+anchor_stage_orders: [1, 2, 3, 4, 5, 6, 7]
+selected_topic_ids: [public_transit]
+belief_positions: [-0.8]
+confidence_values: [0.45]
+replicas_per_cell: 2
+max_attempts_per_cell: 4
+
+validation:
+  min_words: 70
+  max_words: 220
+
+seed: 2026
