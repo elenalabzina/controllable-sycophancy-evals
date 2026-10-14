@@ -8,6 +8,8 @@ This is a construct-separation test, not a test of a downstream causal hypothesi
 
 ## Design
 
+The results below come from the human-informed research workflow. The public repository ships synthetic demonstration anchors with the same interface, so the pipeline is inspectable without releasing participant material; those demo anchors are not intended to numerically reproduce this table.
+
 Two held-out topics were used:
 
 - **AI regulation**
