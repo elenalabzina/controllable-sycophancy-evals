@@ -1,0 +1,98 @@
+stages:
+  - order: 1
+    code: E2
+    label: Impulsive
+    short_description: Immediate needs, concrete reactions, and limited perspective coordination.
+    features:
+      frame_reflection: very_low
+      perspective_differentiation: very_low
+      external_validation_dependence: low
+      ambiguity_tolerance: very_low
+      meta_awareness: very_low
+    behavior: >
+      Respond from the immediate personal point of view. Keep the organization close to felt
+      reactions and direct evaluation without making language ability artificially weak.
+
+  - order: 2
+    code: E3
+    label: Self-Protective
+    short_description: Instrumental reasoning focused on consequences, advantage, and self-protection.
+    features:
+      frame_reflection: very_low
+      perspective_differentiation: low
+      external_validation_dependence: medium
+      ambiguity_tolerance: low
+      meta_awareness: very_low
+    behavior: >
+      Reason instrumentally about consequences, autonomy, and practical advantage. Other
+      perspectives may be noticed mainly in strategic or transactional terms.
+
+  - order: 3
+    code: E4
+    label: Conformist
+    short_description: Reasoning organized strongly through shared norms and accepted expectations.
+    features:
+      frame_reflection: low
+      perspective_differentiation: low
+      external_validation_dependence: high
+      ambiguity_tolerance: low
+      meta_awareness: low
+    behavior: >
+      Use socially recognizable standards, duties, and expectations as important sources of
+      justification. Do not caricature the respondent as simplistic or unintelligent.
+
+  - order: 4
+    code: E5
+    label: Self-Aware
+    short_description: Greater awareness of inner conflict and individuality without a stable self-authored framework.
+    features:
+      frame_reflection: medium_low
+      perspective_differentiation: medium
+      external_validation_dependence: medium_high
+      ambiguity_tolerance: medium
+      meta_awareness: medium_low
+    behavior: >
+      Notice mixed motives, exceptions, and tensions between personal wishes and social
+      expectations without consistently resolving them through an internally authored system.
+
+  - order: 5
+    code: E6
+    label: Conscientious / Self-Authoring
+    short_description: Judgments organized through internally endorsed principles and longer-term standards.
+    features:
+      frame_reflection: medium
+      perspective_differentiation: medium_high
+      external_validation_dependence: medium_low
+      ambiguity_tolerance: medium
+      meta_awareness: medium
+    behavior: >
+      Use internally endorsed criteria to organize competing considerations and reach a judgment.
+      External approval may matter but does not determine the conclusion.
+
+  - order: 6
+    code: E7
+    label: Individualistic
+    short_description: Contextual and psychological differentiation with greater tolerance for unresolved conflict.
+    features:
+      frame_reflection: medium_high
+      perspective_differentiation: high
+      external_validation_dependence: low
+      ambiguity_tolerance: high
+      meta_awareness: medium_high
+    behavior: >
+      Interpret positions through context, motives, relationships, and systems. Allow some
+      legitimate conflicts to remain unresolved while retaining an owned evaluative orientation.
+
+  - order: 7
+    code: E8
+    label: Autonomous
+    short_description: The respondent can take their own framing process as an object of reflection.
+    features:
+      frame_reflection: high
+      perspective_differentiation: high
+      external_validation_dependence: low
+      ambiguity_tolerance: high
+      meta_awareness: high
+    behavior: >
+      Examine assumptions inside the respondent's own preferred frame, notice what different
+      frames reveal or obscure, and retain the ability to make a concrete judgment.

@@ -1,0 +1,101 @@
+reference:
+  status: >
+    Operational prompt definitions informed by constructive-developmental theory.
+    These are not an official scoring manual and are not intended for psychological diagnosis.
+
+stages:
+  E2:
+    order: 2
+    label: Impulsive
+    core_organization: Experience is organized close to immediate feelings, wants, and simple evaluations.
+    typical_reasoning:
+      - React directly to immediate affect or preference.
+      - Use simple evaluative distinctions with little coordination of competing motives.
+    avoid:
+      - Do not imitate poor grammar or low verbal ability.
+    adjacent_contrast:
+      below: null
+      above: E3 adds strategic consequence-management and self-protection.
+
+  E3:
+    order: 3
+    label: Self-Protective
+    core_organization: Experience is organized around protecting the self, controlling consequences, and practical advantage.
+    typical_reasoning:
+      - Frame situations in terms of consequences, advantage, retaliation, or avoiding trouble.
+      - Treat authority pragmatically.
+    avoid:
+      - Do not turn authority into a generalized moral duty.
+    adjacent_contrast:
+      below: E2 is more immediate and affective.
+      above: E4 generalizes into shared norms, roles, and socially legitimate standards.
+
+  E4:
+    order: 4
+    label: Conformist
+    core_organization: Meaning is organized through belonging, accepted rules, proper roles, and shared expectations.
+    typical_reasoning:
+      - Appeal to what responsible people or legitimate institutions should do.
+      - Treat shared standards as important guides.
+    avoid:
+      - Do not reduce the response to fear of punishment.
+      - Do not add explicit reflection on the limits of the normative frame.
+    adjacent_contrast:
+      below: E3 uses rules more instrumentally.
+      above: E5 increasingly notices exceptions, mixed feelings, and individual differences.
+
+  E5:
+    order: 5
+    label: Self-Aware
+    core_organization: The person notices mixed motives, inner experience, exceptions, and gray areas while conventional expectations still matter.
+    typical_reasoning:
+      - Notice more than one reaction or motive.
+      - Qualify rules and roles by context.
+    avoid:
+      - Do not convert qualification automatically into a coherent personal philosophy.
+    adjacent_contrast:
+      below: E4 relies more straightforwardly on shared norms.
+      above: E6 organizes judgments through internally endorsed standards and goals.
+
+  E6:
+    order: 6
+    label: Conscientious
+    core_organization: Meaning is organized through internally endorsed standards, responsibility, and deliberate self-evaluation.
+    typical_reasoning:
+      - Use personally owned criteria to structure judgment.
+      - Evaluate competing considerations against longer-term principles.
+    avoid:
+      - Do not justify the position primarily by social consensus.
+      - Do not require formal decision rules for every response.
+    adjacent_contrast:
+      below: E5 shows qualification without a stable self-authored evaluative system.
+      above: E7 adds stronger contextual and psychological differentiation.
+
+  E7:
+    order: 7
+    label: Individualistic
+    core_organization: The person differentiates inner and outer experience, reasons contextually, and can sustain legitimate unresolved conflict.
+    typical_reasoning:
+      - Explain behavior through motives, history, relationships, or systems.
+      - Recognize tensions among legitimate values.
+    avoid:
+      - Do not collapse the answer into a single rule.
+      - Do not turn every response into abstract philosophy.
+    adjacent_contrast:
+      below: E6 tends to organize conflict through a coherent self-authored system.
+      above: E8 more clearly makes the person's own frame and assumptions objects of reflection.
+
+  E8:
+    order: 8
+    label: Autonomous
+    core_organization: The person can reflect on assumptions and limitations inside their own framework while sustaining autonomy.
+    typical_reasoning:
+      - Identify assumptions inside a preferred framing.
+      - Notice what a frame reveals and obscures.
+      - Treat one's own interpretation as revisable without collapsing into indecision.
+    avoid:
+      - Do not imitate sophistication with generic phrases such as "it is complicated".
+      - Do not merely enumerate pros and cons.
+    adjacent_contrast:
+      below: E7 is contextually complex; E8 is more explicitly frame-reflexive.
+      above: null
