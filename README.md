@@ -2,13 +2,13 @@
 
 **User-side infrastructure for behavioral evaluation of LLM sycophancy across developmentally structured reasoning profiles.**
 
-Most sycophancy evaluations treat the user as fixed. This project asks a different engineering question:
+Many sycophancy evaluations treat the user as fixed. This project asks a different engineering question:
 
 > Can we build controlled synthetic users whose **organization of reasoning** varies systematically while topic, substantive belief, and confidence remain fixed?
 
 The current release focuses on the **controlled-user layer** needed for heterogeneous sycophancy experiments. It separates latent reasoning structure from natural-language realization, applies constraint checks, and evaluates generated behavior with a stage-blind judge. The goal is to make downstream model-behavior evaluation more controlled, auditable, and reproducible.
 
-This repository is a **sanitized research-engineering release**. It contains the simulator, evaluator, demo calibration assets, and held-out validation summaries. It intentionally excludes the downstream human-study design, private participant anchors, and unpublished causal predictions.
+This repository is a **research-engineering release**. It contains the simulator, evaluator, demo calibration assets, and held-out validation summaries. The downstream human-study design, participant anchors, and unpublished causal predictions are intentionally out of scope.
 
 ## Why this is different
 
@@ -24,6 +24,10 @@ Here, the controlled variable is the **structure of meaning-making**. The curren
 - meta-awareness of the reasoning process.
 
 The simulator is explicitly instructed **not** to encode later profiles as greater intelligence, education, factual knowledge, verbosity, or linguistic sophistication.
+
+### Reuse beyond sycophancy
+
+The architecture is intentionally construct-oriented rather than tied to one treatment. A researcher can replace the reasoning-profile specification and evaluator rubric while keeping the same plan → realization → validation pattern. That makes the framework useful for controlled synthetic-user studies involving other latent behavioral constructs as well.
 
 ## Architecture
 
@@ -51,7 +55,7 @@ The private research workflow uses **anonymized human responses collected throug
 
 The public release includes synthetic demonstration anchors with the same schema so that the pipeline can be inspected and run without exposing participant material.
 
-This is related to digital-twin research, but the goal is narrower than a full person-level digital twin. A full digital twin attempts to reproduce a particular individual across many behaviors. This project instead builds **construct-calibrated synthetic participants**: controlled behavioral models designed to vary a targeted reasoning structure while other experimental variables are held fixed.
+This is related to digital-twin research, but the goal is narrower than a full person-level digital twin. A full digital twin attempts to reproduce a particular individual across many behaviors. This project instead builds **construct-calibrated synthetic participants**: controlled behavioral models designed to vary a targeted reasoning structure while other experimental variables are held fixed. For a broader example of person-level digital-twin research using Prolific data, see [Prolific's overview](https://www.prolific.com/resources/how-researchers-created-the-most-extensive-public-dataset-for-digital-twin-research).
 
 ## Controlled variables
 
@@ -89,6 +93,8 @@ Two held-out topics were used with stance and confidence matched across profiles
 - private-car access in city centers.
 
 The frozen system produced the intended qualitative signatures across both topics. In particular, externally validated reasoning peaked in the conformist profile, self-authored criteria emerged in the self-authoring profiles, and frame reflection / meta-awareness were strongest in the autonomous profile.
+
+The reported held-out results come from the human-informed research workflow. The public synthetic demo anchors preserve the interface and construct logic, but they are **not expected to reproduce the reported validation numbers exactly**.
 
 See [docs/validation.md](docs/validation.md) for the validation summary and [docs/methodology.md](docs/methodology.md) for design principles and limitations.
 
@@ -133,7 +139,7 @@ The downstream human-study design and substantive causal hypotheses are intentio
 
 ## Status
 
-Research-engineering release. Ongoing research continues in a separate private workspace.
+Research-engineering release. The public repository exposes the reusable synthetic-user and evaluation layer; downstream human-study work remains outside this release.
 
 ## License
 
