@@ -202,7 +202,7 @@ def _take_diverse(
     """
     Select up to n anchors.
 
-    Prefer examples from different human protocols before selecting
+    Prefer examples from different source protocols before selecting
     multiple responses from the same protocol.
 
     This reduces the risk that the prompt learns one participant's
@@ -283,7 +283,7 @@ def build_stage_calibration(
     The context contains:
 
     1. source-aligned stage definition;
-    2. positive human examples for the target stage;
+    2. positive calibration examples for the target stage;
     3. contrastive examples from the immediately lower stage;
     4. contrastive examples from the immediately higher stage.
 
@@ -572,7 +572,7 @@ def format_stage_calibration_for_prompt(
             )
 
     # ------------------------------------------------------------
-    # POSITIVE HUMAN EXAMPLES
+    # POSITIVE CALIBRATION EXAMPLES
     # ------------------------------------------------------------
 
     if calibration.anchors:
