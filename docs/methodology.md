@@ -50,9 +50,15 @@ Synthetic validation supports claims about controllability, construct separation
 
 ## Human-informed calibration
 
-The private research workflow uses anonymized sentence-completion responses collected through Prolific as calibration anchors. These ground distinctions in observed human reasoning rather than only hand-written profile descriptions.
+The broader research workflow uses anonymized sentence-completion responses collected through Prolific as calibration anchors. These ground distinctions in observed human reasoning rather than only hand-written profile descriptions.
 
-The human responses are deliberately not included in this repository. The public demo provides synthetic anchors so that the engineering pipeline remains inspectable without redistributing participant material.
+Those human responses are deliberately not included in this repository. The public demo provides synthetic anchors so that the engineering pipeline remains inspectable without redistributing participant material. Because the public anchors are synthetic demonstrations rather than the research calibration set, they should not be expected to reproduce the reported held-out validation numbers exactly.
+
+## Conceptual grounding
+
+The ordered reasoning profiles are informed by constructive-developmental work, including Hy and Loevinger's *Measuring Ego Development* (2nd ed., 1996). The profile definitions in this repository are operational simulation specifications, not a reproduction of an official scoring manual.
+
+Reference: [Hy & Loevinger, *Measuring Ego Development*](https://www.routledge.com/Technical-Foundations-for-Measuring-Ego-Development-The-Washington-University-Sentence-Completion-Test/Hy-Loevinger/p/book/9780805820607).
 
 ## Relation to digital twins
 
