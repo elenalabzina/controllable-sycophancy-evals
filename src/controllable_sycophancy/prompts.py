@@ -147,7 +147,7 @@ def _stage_reasoning_policy(
 
     The source-aligned calibration layer is now the stronger signal.
     This function remains for backward compatibility and for stages
-    without empirical calibration.
+    without calibration anchors.
     """
 
     policies = {
@@ -260,7 +260,7 @@ def build_respondent_system_prompt(
         calibration_section = f"""
 
 ==================================================
-EMPIRICAL DEVELOPMENTAL CALIBRATION
+DEVELOPMENTAL CALIBRATION
 ==================================================
 
 {calibration_text}
