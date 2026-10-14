@@ -500,7 +500,7 @@ def build_calibration_cache(
     """
     Build calibration context once per stage.
 
-    The exact same human anchor selection is then used across all
+    The exact same calibration-anchor selection is then used across all
     matched replicas of that stage.
     """
 
@@ -546,9 +546,9 @@ def build_calibration_cache(
         ):
             tqdm.write(
                 (
-                    "No empirical calibration "
+                    "No calibration "
                     f"definition for {stage.code}; "
-                    "using legacy stage description."
+                    "using the stage description."
                 )
             )
 
@@ -835,20 +835,18 @@ def main() -> None:
     if calibration_enabled:
 
         print(
-            "Empirical developmental "
-            "calibration: ENABLED"
+            "Developmental calibration: ENABLED"
         )
 
         print(
-            f"Human item anchors loaded: "
+            f"Calibration anchors loaded: "
             f"{len(calibration_anchors)}"
         )
 
     else:
 
         print(
-            "Empirical developmental "
-            "calibration: DISABLED"
+            "Developmental calibration: DISABLED"
         )
 
     calibration_cache = (
