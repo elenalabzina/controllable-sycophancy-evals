@@ -13,13 +13,8 @@ authors = [{name = "Elena Labzina"}]
 dependencies = [
     "torch>=2.4",
     "transformers>=4.57",
-    "datasets>=3.0",
-    "accelerate>=1.1",
     "openai>=1.0",
     "pyyaml>=6.0",
-    "numpy>=1.26",
-    "pandas>=2.2",
-    "scikit-learn>=1.5",
     "tqdm>=4.66",
 ]
 
